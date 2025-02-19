@@ -88,8 +88,7 @@ def main():
 
     with col2:
         st.subheader("Prompt")
-        prompt2 = st.text_area("Description of report", "", height=100, key="prompt2")
-        st.subheader("Agent Stock Options")
+        prompt2 = st.text_area("Agent stock ", "", height=100, key="prompt2")
         output2 = st.text_area("Output1", "XXXX\nXXXX\nXXXXXX", key="output2")
         if st.button("Validate", key="validate2"):
             st.session_state["validate2"] = True
